@@ -9,11 +9,7 @@ var cnv;
 function setup(){
      cnv= createCanvas(windowWidth,windowHeight);
      cnv.position(0,0);
-     cnv.style("z-index","-1");   
-    //  cnv.style("height","100%");
-    //  cnv.style("width","100%");
-     
-
+     cnv.style("z-index","-1"); 
 }
 function draw(){
    background(0);
