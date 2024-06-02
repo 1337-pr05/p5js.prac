@@ -20,6 +20,7 @@ var b_n=0;
 var al=0;
 var killed=0;
 var health=100;
+var cnv;
 function preload(){
   font=loadFont('DisposableDroidBB_bld.ttf');
   laser_shoot=loadSound("lasshot.wav")
@@ -32,7 +33,9 @@ function preload(){
     fighterplane=loadImage("ship.png");
 }
 function setup(){
-    createCanvas(windowWidth,windowHeight);
+  cnv= createCanvas(windowWidth,windowHeight);
+  cnv.position(0,0);
+  cnv.style("z-index","-1");
     for (var i=0;i<18;i++){
     if ((b_x >= windowWidth-100)){b_x=25;b_y+=150;}
     let a=new bots(b_x,b_y);
