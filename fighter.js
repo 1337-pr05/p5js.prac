@@ -87,7 +87,7 @@ jetplane.show(mouseX,mouseY);
  for(var i=0 ; i<bots_guns.length; i++){
    bots_guns[i].moves();
   bots_guns[i].show_explosive();
-  if(bots_guns[i].contains(jetplane.x,jetplane.y)){ bots_guns[i].x+=random(-botss[i].x,botss[i].x);bots_guns[i].y=botss[i].y;health-=floor(random(10));}
+  if(bots_guns[i].contains(jetplane.x,jetplane.y)){ bots_guns[i].x+=random(-botss[i].x,botss[i].x);bots_guns[i].y=botss[i].y;health-=floor(random(30));}
 
 }
   }
